@@ -18,7 +18,12 @@ export default function VirtualEstimatingPage() {
               </Link>
             </div>
 
-            <div className="flex-shrink-0">
+            <div className="flex items-center gap-4">
+              <Link href="/">
+                <Button variant="outline" className="bg-white/10 border-white/20 text-white hover:bg-white/20">
+                  Home
+                </Button>
+              </Link>
               <Link href="/enquiry">
                 <Button variant="secondary" className="hidden md:flex">
                   Enquire Now
