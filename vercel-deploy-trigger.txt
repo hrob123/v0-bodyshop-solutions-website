@@ -1,0 +1,2 @@
+// Manual trigger to force redeploy from GitHub to Vercel
+// Timestamp: 2025-07-29
