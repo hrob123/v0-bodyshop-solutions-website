@@ -3,7 +3,7 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { CheckCircle, FileText, Clock, Shield, Users } from "lucide-react"
+import { CheckCircle, FileText, Clock, Users } from 'lucide-react'
 
 export default function VirtualEstimatingPage() {
   return (
@@ -74,7 +74,7 @@ export default function VirtualEstimatingPage() {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-3 gap-8">
+          <div className="grid lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <Card className="h-full">
               <CardHeader>
                 <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
@@ -82,7 +82,7 @@ export default function VirtualEstimatingPage() {
                 </div>
                 <CardTitle className="text-xl">Fast Turnaround</CardTitle>
                 <CardDescription>
-                  24-48 hour delivery on most estimates, helping you maintain customer satisfaction and workflow
+                  24-48 hour delivery on most driveable estimates, helping you maintain customer satisfaction and workflow
                   efficiency.
                 </CardDescription>
               </CardHeader>
@@ -94,40 +94,11 @@ export default function VirtualEstimatingPage() {
                   </div>
                   <div className="flex items-start">
                     <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">Real-time progress updates</span>
+                    <span className="text-sm">Complete quote with parts pricing</span>
                   </div>
                   <div className="flex items-start">
                     <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
                     <span className="text-sm">Flexible scheduling options</span>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="h-full">
-              <CardHeader>
-                <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
-                  <Shield className="h-6 w-6 text-green-600" />
-                </div>
-                <CardTitle className="text-xl">Quality Assurance</CardTitle>
-                <CardDescription>
-                  Every estimate undergoes rigorous quality checks to ensure accuracy and compliance with industry
-                  standards.
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-3">
-                  <div className="flex items-start">
-                    <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">Multi-point quality verification</span>
-                  </div>
-                  <div className="flex items-start">
-                    <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">Industry compliance guarantee</span>
-                  </div>
-                  <div className="flex items-start">
-                    <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">Accuracy assurance policy</span>
                   </div>
                 </div>
               </CardContent>
@@ -140,22 +111,22 @@ export default function VirtualEstimatingPage() {
                 </div>
                 <CardTitle className="text-xl">Expert Team</CardTitle>
                 <CardDescription>
-                  Certified estimators with years of experience across all major vehicle makes and damage types.
+                  Experienced estimators with years of experience across all major vehicle makes and damage types.
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="space-y-3">
                   <div className="flex items-start">
                     <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">Industry-certified professionals</span>
+                    <span className="text-sm">Industry professionals</span>
                   </div>
                   <div className="flex items-start">
                     <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">Specialised damage expertise</span>
+                    <span className="text-sm">Estimation system experts</span>
                   </div>
                   <div className="flex items-start">
                     <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">Continuous professional development</span>
+                    <span className="text-sm">Multi-system syncing</span>
                   </div>
                 </div>
               </CardContent>
@@ -170,7 +141,7 @@ export default function VirtualEstimatingPage() {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">How It Works</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Simple, streamlined process to get your estimates completed quickly and accurately
+              Simple, discreet process to get your estimates completed quickly and accurately
             </p>
           </div>
 
