@@ -121,16 +121,16 @@ export default function HomePage() {
               </CardContent>
             </Card>
 
-            {/* External Quote Reviews */}
+            {/* Estimation Reviews */}
             <Card className="h-full flex flex-col">
               <CardHeader>
                 <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
                   <Search className="h-6 w-6 text-green-600" />
                 </div>
-                <CardTitle className="text-xl">External Quote Reviews</CardTitle>
+                <CardTitle className="text-xl">Estimation Reviews</CardTitle>
                 <CardDescription>
-                  Independent, comprehensive review of your estimates to identify revenue leakage, ensure accuracy, and
-                  optimise your profitability through expert analysis.
+                  Targeted software analysis delivers comprehensive estimation reviews, uncovering legitimate claimable
+                  items often missed or misunderstood.
                 </CardDescription>
               </CardHeader>
               <CardContent className="flex-1 flex flex-col">
@@ -153,7 +153,7 @@ export default function HomePage() {
                   </div>
                 </div>
                 <div>
-                  <Link href="/services/external-quote-reviews">
+                  <Link href="/services/estimation-reviews">
                     <Button className="w-full bg-[#007aac] hover:bg-[#00628a]">Learn More</Button>
                   </Link>
                   <Link href="/enquiry" className="block mt-4">
@@ -309,7 +309,7 @@ export default function HomePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-[#007aac]">
+      <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-800">
         <div className="container text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Ready to Transform Your Business?</h2>
           <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">

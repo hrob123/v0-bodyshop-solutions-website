@@ -3,7 +3,7 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { CheckCircle, FileText, Clock, Users } from 'lucide-react'
+import { CheckCircle, FileText, Clock, Users } from "lucide-react"
 
 export default function VirtualEstimatingPage() {
   return (
@@ -82,8 +82,8 @@ export default function VirtualEstimatingPage() {
                 </div>
                 <CardTitle className="text-xl">Fast Turnaround</CardTitle>
                 <CardDescription>
-                  24-48 hour delivery on most driveable estimates, helping you maintain customer satisfaction and workflow
-                  efficiency.
+                  24-48 hour delivery on most driveable estimates, helping you maintain customer satisfaction and
+                  workflow efficiency.
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -111,7 +111,8 @@ export default function VirtualEstimatingPage() {
                 </div>
                 <CardTitle className="text-xl">Expert Team</CardTitle>
                 <CardDescription>
-                  Experienced estimators with years of experience across all major vehicle makes and damage types.
+                  Experienced estimators with years of experience across all major vehicle makes and damage types,
+                  ensuring professional service delivery.
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -150,38 +151,44 @@ export default function VirtualEstimatingPage() {
               <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl font-bold text-blue-600">1</span>
               </div>
-              <h3 className="text-lg font-semibold mb-2">Submit Photos</h3>
-              <p className="text-gray-600">Upload vehicle photos and damage details through our secure portal</p>
+              <h3 className="text-lg font-semibold mb-2">Onboarding</h3>
+              <p className="text-gray-600">
+                Secure and simple onboarding process grants us easy access for virtual support
+              </p>
             </div>
 
             <div className="text-center">
               <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl font-bold text-blue-600">2</span>
               </div>
-              <h3 className="text-lg font-semibold mb-2">Expert Review</h3>
-              <p className="text-gray-600">Our certified estimators analyse the damage and create detailed estimates</p>
+              <h3 className="text-lg font-semibold mb-2">Notify Us</h3>
+              <p className="text-gray-600">
+                Provide us a list of job numbers with images loaded into your Quote Package
+              </p>
             </div>
 
             <div className="text-center">
               <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl font-bold text-blue-600">3</span>
               </div>
-              <h3 className="text-lg font-semibold mb-2">Quality Check</h3>
-              <p className="text-gray-600">Every estimate undergoes thorough quality assurance verification</p>
+              <h3 className="text-lg font-semibold mb-2">Estimation</h3>
+              <p className="text-gray-600">An experienced estimator will do a complete estimate with parts pricing</p>
             </div>
 
             <div className="text-center">
               <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl font-bold text-blue-600">4</span>
               </div>
-              <h3 className="text-lg font-semibold mb-2">Delivery</h3>
-              <p className="text-gray-600">Receive your completed estimate within 24-48 hours</p>
+              <h3 className="text-lg font-semibold mb-2">QC & Delivery</h3>
+              <p className="text-gray-600">
+                We send back to you a quality checked, completed estimate ready to submit or add items as you wish
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Features */}
+      {/* Service Features */}
       <section className="py-20 bg-gray-50">
         <div className="container">
           <div className="text-center mb-16">
@@ -197,9 +204,9 @@ export default function VirtualEstimatingPage() {
                 <CheckCircle className="h-5 w-5 text-green-600" />
               </div>
               <div>
-                <h3 className="font-semibold mb-2">All Vehicle Types</h3>
+                <h3 className="font-semibold mb-2">Most Make & Models</h3>
                 <p className="text-gray-600 text-sm">
-                  Passenger cars, commercial vehicles, motorcycles, and specialty vehicles
+                  Comprehensive coverage for most vehicle makes and models, excluding trucks and buses
                 </p>
               </div>
             </div>
@@ -210,7 +217,9 @@ export default function VirtualEstimatingPage() {
               </div>
               <div>
                 <h3 className="font-semibold mb-2">Damage Assessment</h3>
-                <p className="text-gray-600 text-sm">Comprehensive analysis of visible and hidden damage</p>
+                <p className="text-gray-600 text-sm">
+                  Thorough damage evaluation with preference for driveable claims unless vehicle is stripped
+                </p>
               </div>
             </div>
 
@@ -219,8 +228,10 @@ export default function VirtualEstimatingPage() {
                 <CheckCircle className="h-5 w-5 text-green-600" />
               </div>
               <div>
-                <h3 className="font-semibold mb-2">Parts Sourcing</h3>
-                <p className="text-gray-600 text-sm">OEM, aftermarket, and recycled parts identification and pricing</p>
+                <h3 className="font-semibold mb-2">Expert Parts Sourcing</h3>
+                <p className="text-gray-600 text-sm">
+                  PartsCheck experts ensuring the right parts for every scenario without fail
+                </p>
               </div>
             </div>
 
@@ -229,8 +240,10 @@ export default function VirtualEstimatingPage() {
                 <CheckCircle className="h-5 w-5 text-green-600" />
               </div>
               <div>
-                <h3 className="font-semibold mb-2">Labour Calculations</h3>
-                <p className="text-gray-600 text-sm">Accurate labour time estimates based on industry standards</p>
+                <h3 className="font-semibold mb-2">Supplementary Support</h3>
+                <p className="text-gray-600 text-sm">
+                  Expert identification of money left on the table before job invoicing and pre-invoicing support
+                </p>
               </div>
             </div>
 
@@ -239,8 +252,10 @@ export default function VirtualEstimatingPage() {
                 <CheckCircle className="h-5 w-5 text-green-600" />
               </div>
               <div>
-                <h3 className="font-semibold mb-2">Supplement Support</h3>
-                <p className="text-gray-600 text-sm">Additional damage identification and supplement preparation</p>
+                <h3 className="font-semibold mb-2">OEM Repair Methods</h3>
+                <p className="text-gray-600 text-sm">
+                  Following OEM repair methods in estimation and industry best practices
+                </p>
               </div>
             </div>
 
@@ -249,8 +264,10 @@ export default function VirtualEstimatingPage() {
                 <CheckCircle className="h-5 w-5 text-green-600" />
               </div>
               <div>
-                <h3 className="font-semibold mb-2">Documentation</h3>
-                <p className="text-gray-600 text-sm">Detailed notes and explanations for all estimate components</p>
+                <h3 className="font-semibold mb-2">Best Practice Systems</h3>
+                <p className="text-gray-600 text-sm">
+                  Experts in estimation software and external platform integration ensuring best processes
+                </p>
               </div>
             </div>
           </div>
@@ -258,14 +275,14 @@ export default function VirtualEstimatingPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-[#007aac]">
+      <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-800">
         <div className="container text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Ready to Streamline Your Estimating?</h2>
           <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
             Let our expert team handle your overflow work while you focus on what matters most - running your business
           </p>
           <Link href="/enquiry">
-            <Button size="lg" className="bg-white text-[#007aac] hover:bg-gray-100">
+            <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
               Get Started Today
             </Button>
           </Link>

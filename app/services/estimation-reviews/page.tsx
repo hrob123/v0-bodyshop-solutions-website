@@ -3,9 +3,9 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { CheckCircle, Search, TrendingUp, Shield, DollarSign } from "lucide-react"
+import { CheckCircle, Search, TrendingUp, DollarSign } from "lucide-react"
 
-export default function ExternalQuoteReviewsPage() {
+export default function EstimationReviewsPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
@@ -46,10 +46,10 @@ export default function ExternalQuoteReviewsPage() {
             <div className="w-16 h-16 bg-white/10 rounded-lg flex items-center justify-center mb-6">
               <Search className="h-8 w-8 text-white" />
             </div>
-            <h1 className="text-3xl font-bold tracking-tight md:text-5xl mb-4">External Quote Reviews</h1>
+            <h1 className="text-3xl font-bold tracking-tight md:text-5xl mb-4">Estimation Reviews</h1>
             <p className="max-w-2xl text-xl text-blue-100 mb-8">
-              Independent, comprehensive review of your estimates to identify revenue leakage, ensure accuracy, and
-              optimise your profitability through expert analysis.
+              Complex systems mean claimable items can be easily missed. Our comprehensive reviews pinpoint where system
+              use can improve, ensuring labour, paint and parts are captured correctly for maximum profitability.
             </p>
             <Link href="/enquiry">
               <Button
@@ -67,19 +67,19 @@ export default function ExternalQuoteReviewsPage() {
       <section className="py-20 bg-gray-50">
         <div className="container">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why External Quote Reviews Matter</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why Estimation Reviews Matter</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Uncover hidden revenue opportunities and ensure your estimates are maximising profitability
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-3 gap-8">
+          <div className="grid lg:grid-cols-2 gap-12 max-w-4xl mx-auto">
             <Card className="h-full">
               <CardHeader>
                 <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
                   <DollarSign className="h-6 w-6 text-green-600" />
                 </div>
-                <CardTitle className="text-xl">Revenue Recovery</CardTitle>
+                <CardTitle className="text-xl">Dollars Left on the Table</CardTitle>
                 <CardDescription>
                   Identify missed opportunities and recover lost revenue through comprehensive estimate analysis.
                 </CardDescription>
@@ -88,43 +88,15 @@ export default function ExternalQuoteReviewsPage() {
                 <div className="space-y-3">
                   <div className="flex items-start">
                     <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">Hidden damage identification</span>
+                    <span className="text-sm">AudaNet & estimate checks for best practice</span>
                   </div>
                   <div className="flex items-start">
                     <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">Missed labour operations</span>
+                    <span className="text-sm">PartsCheck review of pricing and selections</span>
                   </div>
                   <div className="flex items-start">
                     <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">Undervalued repair processes</span>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="h-full">
-              <CardHeader>
-                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-                  <Shield className="h-6 w-6 text-blue-600" />
-                </div>
-                <CardTitle className="text-xl">Quality Assurance</CardTitle>
-                <CardDescription>
-                  Ensure your estimates meet industry standards and compliance requirements.
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-3">
-                  <div className="flex items-start">
-                    <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">Industry standard compliance</span>
-                  </div>
-                  <div className="flex items-start">
-                    <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">Accuracy verification</span>
-                  </div>
-                  <div className="flex items-start">
-                    <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">Best practice recommendations</span>
+                    <span className="text-sm">Syncing review across IBS, AudaNet, and PartsCheck</span>
                   </div>
                 </div>
               </CardContent>
@@ -144,15 +116,15 @@ export default function ExternalQuoteReviewsPage() {
                 <div className="space-y-3">
                   <div className="flex items-start">
                     <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">Performance analytics</span>
+                    <span className="text-sm">Feedback on workflow and estimating process</span>
                   </div>
                   <div className="flex items-start">
                     <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">Training recommendations</span>
+                    <span className="text-sm">Simple solutions to complex issues</span>
                   </div>
                   <div className="flex items-start">
                     <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">Workflow optimisation</span>
+                    <span className="text-sm">Faster invoicing and cash flow with fewer early-stage errors</span>
                   </div>
                 </div>
               </CardContent>
@@ -177,7 +149,7 @@ export default function ExternalQuoteReviewsPage() {
                 <span className="text-2xl font-bold text-green-600">1</span>
               </div>
               <h3 className="text-lg font-semibold mb-2">Initial Assessment</h3>
-              <p className="text-gray-600">Comprehensive review of your estimate structure and methodology</p>
+              <p className="text-gray-600">Review a batch of estimates using proven best practice methods.</p>
             </div>
 
             <div className="text-center">
@@ -185,15 +157,19 @@ export default function ExternalQuoteReviewsPage() {
                 <span className="text-2xl font-bold text-green-600">2</span>
               </div>
               <h3 className="text-lg font-semibold mb-2">Line-by-Line Analysis</h3>
-              <p className="text-gray-600">Detailed examination of every component, part, and labour operation</p>
+              <p className="text-gray-600">
+                Check each quote in detail, reviewing chosen and missed items across all three systems.
+              </p>
             </div>
 
             <div className="text-center">
               <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl font-bold text-green-600">3</span>
               </div>
-              <h3 className="text-lg font-semibold mb-2">Gap Identification</h3>
-              <p className="text-gray-600">Identify missed opportunities and potential revenue leakage</p>
+              <h3 className="text-lg font-semibold mb-2">Dollars Left on the Table</h3>
+              <p className="text-gray-600">
+                Highlight missed opportunities and incorrect practices that reduce revenue and waste time.
+              </p>
             </div>
 
             <div className="text-center">
@@ -201,88 +177,16 @@ export default function ExternalQuoteReviewsPage() {
                 <span className="text-2xl font-bold text-green-600">4</span>
               </div>
               <h3 className="text-lg font-semibold mb-2">Detailed Report</h3>
-              <p className="text-gray-600">Comprehensive findings with actionable recommendations</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* What We Review */}
-      <section className="py-20 bg-gray-50">
-        <div className="container">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">What We Review</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Comprehensive analysis covering all aspects of your estimates
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="flex items-start">
-              <div className="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center mr-4 mt-1">
-                <CheckCircle className="h-5 w-5 text-blue-600" />
-              </div>
-              <div>
-                <h3 className="font-semibold mb-2">Damage Assessment</h3>
-                <p className="text-gray-600 text-sm">Accuracy of damage identification and repair methodology</p>
-              </div>
-            </div>
-
-            <div className="flex items-start">
-              <div className="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center mr-4 mt-1">
-                <CheckCircle className="h-5 w-5 text-blue-600" />
-              </div>
-              <div>
-                <h3 className="font-semibold mb-2">Parts Selection</h3>
-                <p className="text-gray-600 text-sm">OEM vs aftermarket decisions and pricing accuracy</p>
-              </div>
-            </div>
-
-            <div className="flex items-start">
-              <div className="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center mr-4 mt-1">
-                <CheckCircle className="h-5 w-5 text-blue-600" />
-              </div>
-              <div>
-                <h3 className="font-semibold mb-2">Labour Operations</h3>
-                <p className="text-gray-600 text-sm">Completeness and accuracy of all labour time calculations</p>
-              </div>
-            </div>
-
-            <div className="flex items-start">
-              <div className="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center mr-4 mt-1">
-                <CheckCircle className="h-5 w-5 text-blue-600" />
-              </div>
-              <div>
-                <h3 className="font-semibold mb-2">Paint & Materials</h3>
-                <p className="text-gray-600 text-sm">Paint coverage calculations and material requirements</p>
-              </div>
-            </div>
-
-            <div className="flex items-start">
-              <div className="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center mr-4 mt-1">
-                <CheckCircle className="h-5 w-5 text-blue-600" />
-              </div>
-              <div>
-                <h3 className="font-semibold mb-2">Hidden Damage</h3>
-                <p className="text-gray-600 text-sm">Potential concealed damage and supplement opportunities</p>
-              </div>
-            </div>
-
-            <div className="flex items-start">
-              <div className="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center mr-4 mt-1">
-                <CheckCircle className="h-5 w-5 text-blue-600" />
-              </div>
-              <div>
-                <h3 className="font-semibold mb-2">Industry Compliance</h3>
-                <p className="text-gray-600 text-sm">Adherence to manufacturer and industry standards</p>
-              </div>
+              <p className="text-gray-600">
+                Deliver a clear breakdown of findings with practical, easy-to-apply solutions for change.
+              </p>
             </div>
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-[#007aac]">
+      <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-800">
         <div className="container text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Maximise Your Revenue Today</h2>
           <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
@@ -290,7 +194,7 @@ export default function ExternalQuoteReviewsPage() {
             opportunities.
           </p>
           <Link href="/enquiry">
-            <Button size="lg" className="bg-white text-[#007aac] hover:bg-gray-100">
+            <Button className="bg-white text-blue-600 hover:bg-gray-100 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 px-12 py-6 text-xl font-semibold rounded-xl">
               Request Your Review
             </Button>
           </Link>
@@ -317,8 +221,8 @@ export default function ExternalQuoteReviewsPage() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/services/external-quote-reviews" className="text-gray-300 hover:text-white">
-                    Quote Reviews
+                  <Link href="/services/estimation-reviews" className="text-gray-300 hover:text-white">
+                    Estimation Reviews
                   </Link>
                 </li>
                 <li>

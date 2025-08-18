@@ -408,7 +408,7 @@ export default function EstimatorMentorshipPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-[#007aac]">
+      <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-800">
         <div className="container text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Ready to Elevate Your Estimation Skills?</h2>
           <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
@@ -417,7 +417,7 @@ export default function EstimatorMentorshipPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/enquiry">
-              <Button size="lg" className="bg-white text-[#007aac] hover:bg-gray-100">
+              <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
                 Start Your Program Today
               </Button>
             </Link>
@@ -425,7 +425,7 @@ export default function EstimatorMentorshipPage() {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-white text-white hover:bg-white hover:text-[#007aac] bg-transparent"
+                className="border-white text-white hover:bg-white hover:text-blue-600 bg-transparent"
               >
                 View All Services
               </Button>
