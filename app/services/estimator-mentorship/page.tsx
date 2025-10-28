@@ -3,7 +3,7 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { CheckCircle, Users, Target, TrendingUp, Clock, Award, BookOpen, MessageSquare } from "lucide-react"
+import { Check, Users, Target, TrendingUp, Award, BookOpen, MessageSquare } from "lucide-react"
 
 export default function EstimatorMentorshipPage() {
   return (
@@ -86,7 +86,7 @@ export default function EstimatorMentorshipPage() {
               </p>
               <div className="space-y-4">
                 <div className="flex items-start">
-                  <CheckCircle className="h-6 w-6 text-green-500 mr-3 mt-1 flex-shrink-0" />
+                  <Check className="h-6 w-6 text-green-500 mr-3 mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="font-semibold text-gray-900">Individual Assessment</h3>
                     <p className="text-gray-600">
@@ -95,7 +95,7 @@ export default function EstimatorMentorshipPage() {
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <CheckCircle className="h-6 w-6 text-green-500 mr-3 mt-1 flex-shrink-0" />
+                  <Check className="h-6 w-6 text-green-500 mr-3 mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="font-semibold text-gray-900">Customised Learning Path</h3>
                     <p className="text-gray-600">
@@ -104,7 +104,7 @@ export default function EstimatorMentorshipPage() {
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <CheckCircle className="h-6 w-6 text-green-500 mr-3 mt-1 flex-shrink-0" />
+                  <Check className="h-6 w-6 text-green-500 mr-3 mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="font-semibold text-gray-900">Ongoing Support</h3>
                     <p className="text-gray-600">Continuous guidance and program adjustment for optimal results</p>
@@ -135,90 +135,86 @@ export default function EstimatorMentorshipPage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <Card className="text-center">
-              <CardHeader>
-                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Target className="h-8 w-8 text-blue-600" />
-                </div>
-                <CardTitle>Improved Accuracy</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600">
-                  Reduce estimation errors and increase accuracy through proven methodologies and best practices
-                </p>
-              </CardContent>
-            </Card>
+          <div className="flex flex-col gap-8">
+            {/* First row - 3 cards */}
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <Card className="text-center">
+                <CardHeader>
+                  <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Target className="h-8 w-8 text-blue-600" />
+                  </div>
+                  <CardTitle>Improved Accuracy</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-600">
+                    Establish one streamlined workflow with a strong focus on preparation upfront, reducing disruptions
+                    and keeping vehicles moving smoothly through the repair process.
+                  </p>
+                </CardContent>
+              </Card>
 
-            <Card className="text-center">
-              <CardHeader>
-                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <TrendingUp className="h-8 w-8 text-green-600" />
-                </div>
-                <CardTitle>Increased Efficiency</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600">
-                  Streamline your estimation process and complete estimates faster without compromising quality
-                </p>
-              </CardContent>
-            </Card>
+              <Card className="text-center">
+                <CardHeader>
+                  <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <TrendingUp className="h-8 w-8 text-green-600" />
+                  </div>
+                  <CardTitle>Increased Efficiency</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-600">
+                    Gain advanced training in system usage to capture every billable item and minimise missed revenue,
+                    resulting in cleaner estimates and fewer invoicing adjustments.
+                  </p>
+                </CardContent>
+              </Card>
 
-            <Card className="text-center">
-              <CardHeader>
-                <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Award className="h-8 w-8 text-purple-600" />
-                </div>
-                <CardTitle>Professional Growth</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600">
-                  Advance your career with enhanced skills and industry-recognised expertise
-                </p>
-              </CardContent>
-            </Card>
+              <Card className="text-center">
+                <CardHeader>
+                  <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Award className="h-8 w-8 text-purple-600" />
+                  </div>
+                  <CardTitle>Systems Syncing Training</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-600">
+                    Learn how to leverage the tools you already use to produce more accurate, profitable estimates,
+                    including detailed Audanet critical fields optimisation.
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
 
-            <Card className="text-center">
-              <CardHeader>
-                <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Clock className="h-8 w-8 text-orange-600" />
-                </div>
-                <CardTitle>Time Management</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600">
-                  Learn effective time management strategies to handle higher volumes without stress
-                </p>
-              </CardContent>
-            </Card>
+            {/* Second row - 2 cards centered */}
+            <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+              <Card className="text-center">
+                <CardHeader>
+                  <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <BookOpen className="h-8 w-8 text-red-600" />
+                  </div>
+                  <CardTitle>Industry Knowledge</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-600">
+                    Build practical expertise across real-world repair methods, assessor negotiations, and the industry
+                    Code of Conduct to stay aligned with best practice and compliance.
+                  </p>
+                </CardContent>
+              </Card>
 
-            <Card className="text-center">
-              <CardHeader>
-                <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <BookOpen className="h-8 w-8 text-red-600" />
-                </div>
-                <CardTitle>Industry Knowledge</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600">
-                  Stay updated with the latest industry trends, technologies, and regulatory changes
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="text-center">
-              <CardHeader>
-                <div className="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <MessageSquare className="h-8 w-8 text-teal-600" />
-                </div>
-                <CardTitle>Communication Skills</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600">
-                  Enhance your ability to communicate effectively with customers, insurers, and team members
-                </p>
-              </CardContent>
-            </Card>
+              <Card className="text-center">
+                <CardHeader>
+                  <div className="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <MessageSquare className="h-8 w-8 text-teal-600" />
+                  </div>
+                  <CardTitle>Communication Skills</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-600">
+                    Enhance your ability to communicate effectively with customers, insurers, and team members
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
           </div>
         </div>
       </section>
@@ -245,19 +241,19 @@ export default function EstimatorMentorshipPage() {
               <CardContent>
                 <ul className="space-y-2">
                   <li className="flex items-start">
-                    <CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <Check className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
                     <span className="text-sm">Skills assessment questionnaire</span>
                   </li>
                   <li className="flex items-start">
-                    <CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <Check className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
                     <span className="text-sm">Practical estimation review</span>
                   </li>
                   <li className="flex items-start">
-                    <CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <Check className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
                     <span className="text-sm">Goal setting and planning</span>
                   </li>
                   <li className="flex items-start">
-                    <CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <Check className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
                     <span className="text-sm">Customised learning path creation</span>
                   </li>
                 </ul>
@@ -275,19 +271,19 @@ export default function EstimatorMentorshipPage() {
               <CardContent>
                 <ul className="space-y-2">
                   <li className="flex items-start">
-                    <CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <Check className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
                     <span className="text-sm">Weekly mentoring sessions</span>
                   </li>
                   <li className="flex items-start">
-                    <CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <Check className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
                     <span className="text-sm">Real-world case studies</span>
                   </li>
                   <li className="flex items-start">
-                    <CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <Check className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
                     <span className="text-sm">Hands-on practice sessions</span>
                   </li>
                   <li className="flex items-start">
-                    <CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <Check className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
                     <span className="text-sm">Progress tracking and feedback</span>
                   </li>
                 </ul>
@@ -300,25 +296,21 @@ export default function EstimatorMentorshipPage() {
                   <span className="text-2xl font-bold text-purple-600">3</span>
                 </div>
                 <CardTitle>Ongoing Support</CardTitle>
-                <CardDescription>Continued guidance and professional development</CardDescription>
+                <CardDescription>Continued guidance and professional development support</CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2">
                   <li className="flex items-start">
-                    <CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <Check className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
                     <span className="text-sm">Monthly check-in sessions</span>
                   </li>
                   <li className="flex items-start">
-                    <CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">Access to resource library</span>
+                    <Check className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <span className="text-sm">Optional Spot Audit/Checks</span>
                   </li>
                   <li className="flex items-start">
-                    <CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <Check className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
                     <span className="text-sm">Industry updates and insights</span>
-                  </li>
-                  <li className="flex items-start">
-                    <CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">Certification preparation</span>
                   </li>
                 </ul>
               </CardContent>
@@ -333,76 +325,55 @@ export default function EstimatorMentorshipPage() {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Key Learning Areas</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Comprehensive coverage of essential estimation skills and knowledge areas
+              Comprehensive technical training to master every aspect of modern collision repair estimation
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center">
-                  <Users className="h-6 w-6 text-blue-600 mr-3" />
-                  Technical Skills
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-3">
-                  <li className="flex items-start">
-                    <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                    <span>Advanced damage assessment techniques</span>
-                  </li>
-                  <li className="flex items-start">
-                    <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                    <span>Estimation software mastery</span>
-                  </li>
-                  <li className="flex items-start">
-                    <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                    <span>Parts identification and sourcing</span>
-                  </li>
-                  <li className="flex items-start">
-                    <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                    <span>Labour time calculations</span>
-                  </li>
-                  <li className="flex items-start">
-                    <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                    <span>Quality control procedures</span>
-                  </li>
-                </ul>
-              </CardContent>
-            </Card>
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-12">
+              <div className="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Users className="h-10 w-10 text-blue-600" />
+              </div>
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Technical Skills Mastery</h3>
+              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                Develop expertise across all critical areas of collision repair estimation
+              </p>
+            </div>
 
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center">
-                  <MessageSquare className="h-6 w-6 text-green-600 mr-3" />
-                  Business Skills
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-3">
-                  <li className="flex items-start">
-                    <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                    <span>Customer communication strategies</span>
-                  </li>
-                  <li className="flex items-start">
-                    <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                    <span>Insurance negotiation techniques</span>
-                  </li>
-                  <li className="flex items-start">
-                    <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                    <span>Profitability optimisation</span>
-                  </li>
-                  <li className="flex items-start">
-                    <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                    <span>Workflow management</span>
-                  </li>
-                  <li className="flex items-start">
-                    <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                    <span>Team leadership development</span>
-                  </li>
-                </ul>
-              </CardContent>
-            </Card>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="flex items-start bg-gray-50 p-6 rounded-lg border border-gray-200">
+                <Check className="h-6 w-6 text-green-500 mr-4 mt-1 flex-shrink-0" />
+                <span className="text-lg text-gray-800">Precision damage assessment and estimation</span>
+              </div>
+              <div className="flex items-start bg-gray-50 p-6 rounded-lg border border-gray-200">
+                <Check className="h-6 w-6 text-green-500 mr-4 mt-1 flex-shrink-0" />
+                <span className="text-lg text-gray-800">Manufacturer-aligned repair estimations</span>
+              </div>
+              <div className="flex items-start bg-gray-50 p-6 rounded-lg border border-gray-200">
+                <Check className="h-6 w-6 text-green-500 mr-4 mt-1 flex-shrink-0" />
+                <span className="text-lg text-gray-800">Warrantable and compliant repair methods</span>
+              </div>
+              <div className="flex items-start bg-gray-50 p-6 rounded-lg border border-gray-200">
+                <Check className="h-6 w-6 text-green-500 mr-4 mt-1 flex-shrink-0" />
+                <span className="text-lg text-gray-800">Advanced PartsCheck system proficiency</span>
+              </div>
+              <div className="flex items-start bg-gray-50 p-6 rounded-lg border border-gray-200">
+                <Check className="h-6 w-6 text-green-500 mr-4 mt-1 flex-shrink-0" />
+                <span className="text-lg text-gray-800">Advanced Audanet platform expertise</span>
+              </div>
+              <div className="flex items-start bg-gray-50 p-6 rounded-lg border border-gray-200">
+                <Check className="h-6 w-6 text-green-500 mr-4 mt-1 flex-shrink-0" />
+                <span className="text-lg text-gray-800">Estimating across all major quote systems</span>
+              </div>
+              <div className="flex items-start bg-gray-50 p-6 rounded-lg border border-gray-200">
+                <Check className="h-6 w-6 text-green-500 mr-4 mt-1 flex-shrink-0" />
+                <span className="text-lg text-gray-800">Software integration and syncing efficiency</span>
+              </div>
+              <div className="flex items-start bg-gray-50 p-6 rounded-lg border border-gray-200">
+                <Check className="h-6 w-6 text-green-500 mr-4 mt-1 flex-shrink-0" />
+                <span className="text-lg text-gray-800">Structured and transparent estimation process</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
