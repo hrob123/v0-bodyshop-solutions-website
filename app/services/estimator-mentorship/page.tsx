@@ -3,7 +3,7 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Check, Users, Target, TrendingUp, Award, BookOpen, MessageSquare } from "lucide-react"
+import { Check, Target, TrendingUp, Award, BookOpen, MessageSquare } from "lucide-react"
 
 export default function EstimatorMentorshipPage() {
   return (
@@ -219,8 +219,58 @@ export default function EstimatorMentorshipPage() {
         </div>
       </section>
 
-      {/* Program Structure */}
+      {/* Technical Skills Section */}
       <section className="py-20 bg-gray-50">
+        <div className="container">
+          <div className="text-center mb-16">
+            <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+              <Target className="h-8 w-8 text-blue-600" />
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Technical Skills</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Master the essential technical competencies required for professional collision repair estimation
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+            <div className="flex items-start gap-3 p-6 bg-gray-50 rounded-lg border border-gray-200">
+              <Check className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
+              <span className="text-gray-700">Precision damage assessment and estimation</span>
+            </div>
+            <div className="flex items-start gap-3 p-6 bg-gray-50 rounded-lg border border-gray-200">
+              <Check className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
+              <span className="text-gray-700">Manufacturer-aligned repair estimations</span>
+            </div>
+            <div className="flex items-start gap-3 p-6 bg-gray-50 rounded-lg border border-gray-200">
+              <Check className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
+              <span className="text-gray-700">Warrantable and compliant repair methods</span>
+            </div>
+            <div className="flex items-start gap-3 p-6 bg-gray-50 rounded-lg border border-gray-200">
+              <Check className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
+              <span className="text-gray-700">Advanced PartsCheck system proficiency</span>
+            </div>
+            <div className="flex items-start gap-3 p-6 bg-gray-50 rounded-lg border border-gray-200">
+              <Check className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
+              <span className="text-gray-700">Advanced Audanet platform expertise</span>
+            </div>
+            <div className="flex items-start gap-3 p-6 bg-gray-50 rounded-lg border border-gray-200">
+              <Check className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
+              <span className="text-gray-700">Estimating across all major quote systems</span>
+            </div>
+            <div className="flex items-start gap-3 p-6 bg-gray-50 rounded-lg border border-gray-200">
+              <Check className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
+              <span className="text-gray-700">Software integration and syncing efficiency</span>
+            </div>
+            <div className="flex items-start gap-3 p-6 bg-gray-50 rounded-lg border border-gray-200">
+              <Check className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
+              <span className="text-gray-700">Structured and transparent estimation process</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Program Structure */}
+      <section className="py-20 bg-white">
         <div className="container">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Program Structure</h2>
@@ -315,65 +365,6 @@ export default function EstimatorMentorshipPage() {
                 </ul>
               </CardContent>
             </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* Learning Areas */}
-      <section className="py-20 bg-white">
-        <div className="container">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Key Learning Areas</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Comprehensive technical training to master every aspect of modern collision repair estimation
-            </p>
-          </div>
-
-          <div className="max-w-5xl mx-auto">
-            <div className="text-center mb-12">
-              <div className="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Users className="h-10 w-10 text-blue-600" />
-              </div>
-              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Technical Skills Mastery</h3>
-              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Develop expertise across all critical areas of collision repair estimation
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="flex items-start bg-gray-50 p-6 rounded-lg border border-gray-200">
-                <Check className="h-6 w-6 text-green-500 mr-4 mt-1 flex-shrink-0" />
-                <span className="text-lg text-gray-800">Precision damage assessment and estimation</span>
-              </div>
-              <div className="flex items-start bg-gray-50 p-6 rounded-lg border border-gray-200">
-                <Check className="h-6 w-6 text-green-500 mr-4 mt-1 flex-shrink-0" />
-                <span className="text-lg text-gray-800">Manufacturer-aligned repair estimations</span>
-              </div>
-              <div className="flex items-start bg-gray-50 p-6 rounded-lg border border-gray-200">
-                <Check className="h-6 w-6 text-green-500 mr-4 mt-1 flex-shrink-0" />
-                <span className="text-lg text-gray-800">Warrantable and compliant repair methods</span>
-              </div>
-              <div className="flex items-start bg-gray-50 p-6 rounded-lg border border-gray-200">
-                <Check className="h-6 w-6 text-green-500 mr-4 mt-1 flex-shrink-0" />
-                <span className="text-lg text-gray-800">Advanced PartsCheck system proficiency</span>
-              </div>
-              <div className="flex items-start bg-gray-50 p-6 rounded-lg border border-gray-200">
-                <Check className="h-6 w-6 text-green-500 mr-4 mt-1 flex-shrink-0" />
-                <span className="text-lg text-gray-800">Advanced Audanet platform expertise</span>
-              </div>
-              <div className="flex items-start bg-gray-50 p-6 rounded-lg border border-gray-200">
-                <Check className="h-6 w-6 text-green-500 mr-4 mt-1 flex-shrink-0" />
-                <span className="text-lg text-gray-800">Estimating across all major quote systems</span>
-              </div>
-              <div className="flex items-start bg-gray-50 p-6 rounded-lg border border-gray-200">
-                <Check className="h-6 w-6 text-green-500 mr-4 mt-1 flex-shrink-0" />
-                <span className="text-lg text-gray-800">Software integration and syncing efficiency</span>
-              </div>
-              <div className="flex items-start bg-gray-50 p-6 rounded-lg border border-gray-200">
-                <Check className="h-6 w-6 text-green-500 mr-4 mt-1 flex-shrink-0" />
-                <span className="text-lg text-gray-800">Structured and transparent estimation process</span>
-              </div>
-            </div>
           </div>
         </div>
       </section>
