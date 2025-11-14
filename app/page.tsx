@@ -3,7 +3,7 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { CheckCircle, FileText, Search, Users, Shield, Target } from "lucide-react"
+import { CheckCircle, FileText, Search, Users, Shield, Target } from 'lucide-react'
 
 export default function HomePage() {
   const scrollToServices = () => {
@@ -47,14 +47,10 @@ export default function HomePage() {
         {/* Content */}
         <div className="container py-12 md:py-16 relative z-10">
           <div className="flex flex-col items-center text-center animate-in fade-in duration-1000">
-            <h1 className="text-3xl font-bold tracking-tight md:text-5xl mb-4">
-              Structured estimation processes. Simplified. Profitable.
+            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Untitled%20design%20%287%29-jSHckluaMQtSc8CMmohqRHU8g9NA87.png" alt="Bodyshop Solutions" className="h-32 md:h-40 w-auto mb-8 drop-shadow-lg" />
+            <h1 className="text-3xl font-bold tracking-tight md:text-5xl mb-8">
+              Master the Estimation Process, Minimise the Waste
             </h1>
-            <p className="max-w-2xl text-xl text-gray-100 mb-8">
-              We help collision repairers streamline their estimation processes, reduce revenue leakage, and improve
-              profitability through expert virtual estimating services, comprehensive quote reviews, and professional
-              mentorship programs.
-            </p>
             <Button
               size="lg"
               className="bg-white text-gray-900 hover:bg-gray-100 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
