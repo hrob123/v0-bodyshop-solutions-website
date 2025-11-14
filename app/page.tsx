@@ -37,7 +37,7 @@ export default function HomePage() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative bg-gray-900 text-white py-16 overflow-hidden">
+      <section className="relative bg-gray-900 text-white overflow-hidden">
         {/* Background Image */}
         <div className="absolute inset-0">
           <img src="/images/estimator-work.jpg" alt="Background" className="w-full h-full object-cover" />
@@ -45,15 +45,17 @@ export default function HomePage() {
         </div>
 
         {/* Content */}
-        <div className="container py-12 md:py-16 relative z-10">
-          <div className="flex flex-col items-center text-center animate-in fade-in duration-1000">
-            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Untitled%20design%20%287%29-jSHckluaMQtSc8CMmohqRHU8g9NA87.png" alt="Bodyshop Solutions" className="h-32 md:h-40 w-auto mb-8 drop-shadow-lg" />
-            <h1 className="text-3xl font-bold tracking-tight md:text-5xl mb-8">
+        <div className="relative z-10 min-h-screen flex items-center justify-center">
+          <div className="container flex flex-col items-center text-center py-16 md:py-20">
+            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Untitled%20design%20%288%29-b2rdhcHbcCHJRlXSYIiF3E6sWTIQNH.png" alt="Bodyshop Solutions" className="h-32 md:h-40 w-auto mb-12 drop-shadow-lg animate-in fade-in duration-1000" />
+            
+            <h1 className="text-3xl font-bold tracking-tight md:text-5xl mb-12 animate-in fade-in duration-1000 delay-200">
               Master the Estimation Process, Minimise the Waste
             </h1>
+            
             <Button
               size="lg"
-              className="bg-white text-gray-900 hover:bg-gray-100 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+              className="bg-white text-gray-900 hover:bg-gray-100 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 animate-in fade-in duration-1000 delay-300"
               onClick={scrollToServices}
             >
               Explore Services
