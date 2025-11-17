@@ -11,7 +11,7 @@ import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Checkbox } from "@/components/ui/checkbox"
-import { Phone, Mail, MapPin } from "lucide-react"
+import { Phone, Mail, MapPin } from 'lucide-react'
 
 export default function EnquiryPage() {
   const [formData, setFormData] = useState({
@@ -24,13 +24,34 @@ export default function EnquiryPage() {
     message: "",
     newsletter: false,
   })
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [error, setError] = useState<string | null>(null)
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // Handle form submission here
-    console.log("Form submitted:", formData)
-    // Redirect to confirmation page
-    window.location.href = "/enquiry/confirmation"
+    setIsSubmitting(true)
+    setError(null)
+
+    try {
+      const response = await fetch('/api/enquiry', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      })
+
+      if (!response.ok) {
+        throw new Error('Failed to submit enquiry')
+      }
+
+      // Redirect to confirmation page on success
+      window.location.href = "/enquiry/confirmation"
+    } catch (err) {
+      console.error('[v0] Form submission error:', err)
+      setError('Failed to submit enquiry. Please try again or contact us directly.')
+      setIsSubmitting(false)
+    }
   }
 
   const handleInputChange = (field: string, value: string | boolean) => {
@@ -89,6 +110,12 @@ export default function EnquiryPage() {
                 </CardHeader>
                 <CardContent>
                   <form onSubmit={handleSubmit} className="space-y-6">
+                    {error && (
+                      <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded">
+                        {error}
+                      </div>
+                    )}
+
                     <div className="grid md:grid-cols-2 gap-4">
                       <div>
                         <Label htmlFor="firstName">First Name *</Label>
@@ -98,6 +125,7 @@ export default function EnquiryPage() {
                           required
                           value={formData.firstName}
                           onChange={(e) => handleInputChange("firstName", e.target.value)}
+                          disabled={isSubmitting}
                         />
                       </div>
                       <div>
@@ -108,6 +136,7 @@ export default function EnquiryPage() {
                           required
                           value={formData.lastName}
                           onChange={(e) => handleInputChange("lastName", e.target.value)}
+                          disabled={isSubmitting}
                         />
                       </div>
                     </div>
@@ -121,6 +150,7 @@ export default function EnquiryPage() {
                           required
                           value={formData.email}
                           onChange={(e) => handleInputChange("email", e.target.value)}
+                          disabled={isSubmitting}
                         />
                       </div>
                       <div>
@@ -130,6 +160,7 @@ export default function EnquiryPage() {
                           type="tel"
                           value={formData.phone}
                           onChange={(e) => handleInputChange("phone", e.target.value)}
+                          disabled={isSubmitting}
                         />
                       </div>
                     </div>
@@ -141,12 +172,13 @@ export default function EnquiryPage() {
                         type="text"
                         value={formData.company}
                         onChange={(e) => handleInputChange("company", e.target.value)}
+                        disabled={isSubmitting}
                       />
                     </div>
 
                     <div>
                       <Label htmlFor="service">Service of Interest</Label>
-                      <Select onValueChange={(value) => handleInputChange("service", value)}>
+                      <Select onValueChange={(value) => handleInputChange("service", value)} disabled={isSubmitting}>
                         <SelectTrigger>
                           <SelectValue placeholder="Select a service" />
                         </SelectTrigger>
@@ -169,6 +201,7 @@ export default function EnquiryPage() {
                         placeholder="Tell us about your requirements, current challenges, or any questions you have..."
                         value={formData.message}
                         onChange={(e) => handleInputChange("message", e.target.value)}
+                        disabled={isSubmitting}
                       />
                     </div>
 
@@ -177,14 +210,20 @@ export default function EnquiryPage() {
                         id="newsletter"
                         checked={formData.newsletter}
                         onCheckedChange={(checked) => handleInputChange("newsletter", checked as boolean)}
+                        disabled={isSubmitting}
                       />
                       <Label htmlFor="newsletter" className="text-sm">
                         I'd like to receive updates and industry insights via email
                       </Label>
                     </div>
 
-                    <Button type="submit" size="lg" className="w-full bg-blue-600 hover:bg-blue-700">
-                      Send Enquiry
+                    <Button 
+                      type="submit" 
+                      size="lg" 
+                      className="w-full bg-blue-600 hover:bg-blue-700"
+                      disabled={isSubmitting}
+                    >
+                      {isSubmitting ? 'Sending...' : 'Send Enquiry'}
                     </Button>
                   </form>
                 </CardContent>
@@ -318,7 +357,7 @@ export default function EnquiryPage() {
           </div>
 
           <div className="border-t border-gray-800 mt-8 pt-8 text-center">
-            <p className="text-gray-400">© 2024 Bodyshop Solutions. All rights reserved. | ABN: 26540295359</p>
+            <p className="text-gray-400">© 2025 Bodyshop Solutions. All rights reserved. | ABN: 26540295359</p>
           </div>
         </div>
       </footer>
