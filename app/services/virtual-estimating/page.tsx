@@ -3,7 +3,7 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { CheckCircle, FileText, Clock, Users } from "lucide-react"
+import { CheckCircle, FileText, Clock, Users } from 'lucide-react'
 
 export default function VirtualEstimatingPage() {
   return (
@@ -228,9 +228,9 @@ export default function VirtualEstimatingPage() {
                 <CheckCircle className="h-5 w-5 text-green-600" />
               </div>
               <div>
-                <h3 className="font-semibold mb-2">Expert Parts Sourcing</h3>
+                <h3 className="font-semibold mb-2">Parts Sourcing</h3>
                 <p className="text-gray-600 text-sm">
-                  PartsCheck experts ensuring the right parts for every scenario without fail
+                  Highly experienced PartsCheck usage ensures the right parts for every scenario
                 </p>
               </div>
             </div>

@@ -95,7 +95,7 @@ export default function HomePage() {
                   </div>
                   <div className="flex items-start">
                     <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">Certified estimators with years of experience</span>
+                    <span className="text-sm">Highly experienced estimators</span>
                   </div>
                   <div className="flex items-start">
                     <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
